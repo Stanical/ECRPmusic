@@ -1,0 +1,46 @@
+{
+  "name": "music-menu",
+  "version": "1.0.0",
+  "description": "ECRP music menu",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.4",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "@lwahonen/ffi-napi": "^4.0.12",
+    "@lwahonen/ref-napi": "^4.0.8",
+    "googleapis": "^126.0.1",
+    "node-abi": "^3.47.0",
+    "robotjs": "^0.6.0"
+  },
+  "build": {
+    "appId": "com.yourcompany.musicmenu",
+    "productName": "Music Menu",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}

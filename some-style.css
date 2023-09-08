@@ -1,0 +1,155 @@
+/* Center everything */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide the body's overflow to prevent scrolling */
+}
+
+.glass-container {
+    /* Your existing styles for glass-container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Change z-index to 0 or a positive value */
+    overflow: auto; /* Add overflow property to enable scrolling */
+}
+
+.center-container {
+    /* Your existing styles for center-container */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Ensure center-container is above the scrollable results */
+}
+.input-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Adjust margins and padding as needed */
+.input-row > * {
+    margin: 5px;
+    flex: 1;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    cursor: pointer;
+}
+
+#clearButton {
+    background: rgba(253, 0, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 101%;
+    border-color: #ff0000;
+}
+
+#inner-inner-div {
+    background-color: aquamarine;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: aquamarine;
+}
+
+#advanced {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apibutton {
+    background-color: purple;
+    width: 50%;
+    margin: 5px 0; /* Add margin to separate elements */
+    position: relative;
+    top: -5px;
+}
+
+.detect {
+    background-color: #000000;
+}
+
+.detect:hover {
+    background-color: green;
+}
+
+#newAPI {
+    -webkit-text-security: square;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    position: relative;
+    top: -2.5px;
+}
+
+#results {
+    /* Your existing styles for results */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Add some spacing between the content and results */
+    max-height: 50vh; /* Set a maximum height for results */
+    overflow-y: auto; /* Add vertical scroll for results if needed */
+}
+
+.inner-inner-div {
+    /* Your existing styles for inner-inner-div */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0; /* Add margin between result items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inner-inner-div:hover {
+    /* Your existing styles for hover effect */
+    background-color: green;
+    cursor: pointer;
+}
