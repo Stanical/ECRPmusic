@@ -44,6 +44,7 @@ In future updates, the following features will be added:
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Install the required dependencies using the following command:
+4. An Installer will be provided after ECRP Staff review
 
    ```bash
    npm install
